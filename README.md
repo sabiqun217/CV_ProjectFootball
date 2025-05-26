@@ -21,5 +21,3 @@ Link : https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3
 - Post detection processing
 - Detection Testing
 - System development and integration
-
-https://drive.google.com/drive/folders/1DKrnhJrEvTTqyVdfje9QddLu8BQeJh2A?usp=sharing
