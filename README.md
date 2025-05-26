@@ -1,7 +1,5 @@
 ## Football Tracking and Analysis System
 
-*Sabiqun Bil Khoir - 2155301139*
-
 ## Background
 Football is a popular sport alll over the world, with so many supporter and player from various group and countries. Along with the development of technology, football match analysis has undergone a significant transformation, especially with the presence of AI and Computer Vision. This technology allows a deeper analysis of the game, which is more complex using technology. 
 
