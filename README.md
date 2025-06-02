@@ -1,7 +1,7 @@
 ## Football Tracking and Analysis System
 
 ## Background
-Football is a popular sport alll over the world, with so many supporter and player from various group and countries. Along with the development of technology, football match analysis has undergone a significant transformation, especially with the presence of AI and Computer Vision. This technology allows a deeper analysis of the game, which is more complex using technology. 
+Football is a very popular sport around the world, with millions of fans and players from various backgrounds. Along with the development of technological analysis, football matches have undergone significant transformation, especially with the adoption of Artificial Intelligence (AI) and computer vision technology. Analysis of tracking the movement and position of the ball in a match analysis can be the material needed by a team in a team. The use of technology in this case allows for a more in-depth and objective analysis of the game, which is more complex using technology.
 
 ## Objective
 - Tracking the presence of players, referees and the ball on the screen
