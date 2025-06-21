@@ -165,21 +165,33 @@ class Tracker:
         return frame
 
     def draw_team_ball_control(self,frame,frame_num,team_ball_control):
-        # Draw a semi-transparent rectaggle 
+
+        # Draw a semi-transparent rectangle for ball possession info
         overlay = frame.copy()
-        cv2.rectangle(overlay, (1350, 850), (1900,970), (255,255,255), -1 )
+        cv2.rectangle(overlay, (30, 940), (500, 1030), (255, 255, 255), -1)  # background putih transparan
         alpha = 0.4
         cv2.addWeighted(overlay, alpha, frame, 1 - alpha, 0, frame)
 
-        team_ball_control_till_frame = team_ball_control[:frame_num+1]
-        # Get the number of time each team had ball control
-        team_1_num_frames = team_ball_control_till_frame[team_ball_control_till_frame==1].shape[0]
-        team_2_num_frames = team_ball_control_till_frame[team_ball_control_till_frame==2].shape[0]
-        team_1 = team_1_num_frames/(team_1_num_frames+team_2_num_frames)
-        team_2 = team_2_num_frames/(team_1_num_frames+team_2_num_frames)
+        # Hitung ball possession untuk masing-masing tim
+        team_ball_control_till_frame = team_ball_control[:frame_num + 1]
+        team_1_num_frames = (team_ball_control_till_frame == 1).sum()
+        team_2_num_frames = (team_ball_control_till_frame == 2).sum()
+        total_frames = team_1_num_frames + team_2_num_frames
 
-        cv2.putText(frame, f"Team 1 Ball Control: {team_1*100:.2f}%",(1400,900), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 3)
-        cv2.putText(frame, f"Team 2 Ball Control: {team_2*100:.2f}%",(1400,950), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 3)
+        team_1 = team_1_num_frames / total_frames if total_frames > 0 else 0
+        team_2 = team_2_num_frames / total_frames if total_frames > 0 else 0
+
+        # Font dan posisi teks
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        font_scale = 0.8
+        thickness = 2
+        x_text = 50
+        y_text = 970
+
+        # Judul dan isi panel
+        cv2.putText(frame, "Ball Possession", (x_text, y_text), font, font_scale, (0, 0, 0), thickness)
+        cv2.putText(frame, f"Team 1: {team_1 * 100:.2f}%", (x_text, y_text + 30), font, font_scale, (255, 0, 0), thickness)
+        cv2.putText(frame, f"Team 2: {team_2 * 100:.2f}%", (x_text + 200, y_text + 30), font, font_scale, (0, 0, 255), thickness)
 
         return frame
 
