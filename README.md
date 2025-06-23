@@ -37,5 +37,15 @@ Link : https://www.kaggle.com/datasets/saberghaderi/-dfl-bundesliga-460-mp4-vide
 Using the YOLOv5x model trained with the roboflow dataset to add 4 labels and detect objects in the field.
 
 ## Result
+UI: 
 ![image](https://github.com/user-attachments/assets/fc692663-fc35-44d8-bfa9-e805fa8bcda1)
+
+
+Result: 
+https://github.com/user-attachments/assets/3daf8ebe-dfd8-4a7f-aa6f-fd7eaca96efc
+
+
+Result (Challenge)
+https://github.com/user-attachments/assets/4923afd6-b035-410f-a19f-bd7c3627f31a
+
 
