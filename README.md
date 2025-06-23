@@ -25,3 +25,17 @@ Link : https://www.kaggle.com/datasets/saberghaderi/-dfl-bundesliga-460-mp4-vide
 - Post detection processing
 - Detection Testing
 - System development and integration
+
+## Feature
+- Player Detection with each team color
+- Ball tracker
+- Player speed detector and distance covered
+- Ball possession for each team
+
+## Model Accuracy
+![image](https://github.com/user-attachments/assets/9743f572-9192-49cf-9fe7-58401c26525a)
+Using the YOLOv5x model trained with the roboflow dataset to add 4 labels and detect objects in the field.
+
+## Result
+![image](https://github.com/user-attachments/assets/fc692663-fc35-44d8-bfa9-e805fa8bcda1)
+
