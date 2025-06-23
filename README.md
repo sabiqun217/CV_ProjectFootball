@@ -42,10 +42,10 @@ UI:
 
 
 Result: 
-https://github.com/user-attachments/assets/3daf8ebe-dfd8-4a7f-aa6f-fd7eaca96efc
+![video](https://github.com/user-attachments/assets/3daf8ebe-dfd8-4a7f-aa6f-fd7eaca96efc)
 
 
 Result (Challenge)
-https://github.com/user-attachments/assets/4923afd6-b035-410f-a19f-bd7c3627f31a
+![video](https://github.com/user-attachments/assets/4923afd6-b035-410f-a19f-bd7c3627f31a)
 
 
